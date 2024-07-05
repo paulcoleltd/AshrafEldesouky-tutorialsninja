@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="edge"/>
+
+    <test name="Test Case 1: Check Registeration">
+
+        <classes>
+            <class name="TestCases.TC02_Registeration">
+                <methods>
+                    <include name="Check_Regsiteration"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC04_HomePageAfterLogin">
+                <methods>
+                    <include name="Check_LogOut"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Case 1: Check Registeration">
+
+        <classes>
+            <class name="TestCases.TC02_Registeration">
+                <methods>
+                    <include name="Check_Regsiteration"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC04_HomePageAfterLogin">
+                <methods>
+                    <include name="Check_LogOut"/>
+                </methods>
+            </class>
+            <class name="TestCases.TC03_Login">
+                <methods>
+                    <include name="Check_LoginUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test Case 2: Choose Category and add prodcut cart">
+        <classes>
+            <class name="TestCases.TC01_Dashboard">
+                <methods>
+                    <include name="Check_choosecategory"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
