@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -34,7 +35,10 @@ public class DriverFactory {
                 firefoxOptions.setBinary(firefoxBinary);
                 return new FirefoxDriver(firefoxOptions);
             case "edge":
-                return new EdgeDriver();
+                EdgeOptions options = new EdgeOptions();
+                options.addArguments("start-maximized");
+                return new EdgeDriver(options);
+//                return new EdgeDriver();
             default:
                 chromeOptions = new ChromeOptions();
                 // TODO: handle browsers options

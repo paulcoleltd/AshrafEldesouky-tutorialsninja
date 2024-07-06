@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <parameter name="browser" value="edge"/>
 
-    <test name="Test Case 1: Check Registeration">
+    <test name="Test Case 1: Check Registeration Edge">
 
         <classes>
             <class name="TestCases.TC02_Registeration">
@@ -18,7 +18,7 @@
             </class>
         </classes>
     </test>
-    <test name="Test Case 1: Check Registeration">
+    <test name="Test Case 2: Check Registeration Edge">
 
         <classes>
             <class name="TestCases.TC02_Registeration">
@@ -38,7 +38,7 @@
             </class>
         </classes>
     </test>
-    <test name="Test Case 2: Choose Category and add prodcut cart">
+    <test name="Test Case 3: Choose Category and add prodcut cart Edge">
         <classes>
             <class name="TestCases.TC01_Dashboard">
                 <methods>

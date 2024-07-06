@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 import util.Utility;
 
 import static drivers.DriverHolder.getDriver;
-import static util.Utility.generateRandomPhoneNumber;
+import static util.Utility.*;
+import static util.Utility.writeUsernameToFile;
 
 public class TC02_Registeration extends Testbase{
 
@@ -22,6 +23,24 @@ public class TC02_Registeration extends Testbase{
 
         System.out.println(EmailGeneration_Utility);
         System.out.println(PasswordGeneration_Utility);
+
+
+        String email = EmailGeneration_Utility;
+        String filePath = System.getProperty("user.dir") + "/src/test/java/resources/test_data/ExistingEmail.txt";
+
+        if (isUsernameDuplicate(filePath,email)) {
+            writeUsernameToFile(filePath,email);
+            System.out.println("The email '" + email + "' has been added to the file.");
+        }
+        else {
+            System.out.println("The email '" + email + "' is not a duplicate.");
+            writeUsernameToFile(filePath,email);
+            EmailGeneration_Utility = Utility.generateRandomEmail();
+        }
+
+        System.out.println(EmailGeneration_Utility);
+        System.out.println(PasswordGeneration_Utility);
+
 
         new P01_DashboardPage(getDriver()).CLick_MyAccount_Button().CLick_Regsiter_Button();
 

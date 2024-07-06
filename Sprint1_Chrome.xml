@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
 
 
-    <test name="Test Case 1: Check Registeration">
+    <test name="Test Case 1: Check Registeration Chrome">
         <parameter name="browser" value=""/>
         <classes>
             <class name="TestCases.TC02_Registeration">
@@ -24,7 +24,7 @@
         </classes>
     </test>
 
-        <test name="Test Case 2: Choose Category and add prodcut cart">
+        <test name="Test Case 2: Choose Category and add prodcut cart Chrome">
             <parameter name="browser" value=""/>
             <classes>
                 <class name="TestCases.TC01_Dashboard">

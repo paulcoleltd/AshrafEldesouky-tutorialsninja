@@ -459,8 +459,6 @@ private static final String[] STATES = {
 
 //--------------------------------------------------------------------------------------------------------------------------
     //--------------------------------------------write in file txt -----------------------------------------------
-
-
     public static void writeUsernameToFile( String filePath,String username) {
         BufferedWriter writer = null;
         try {
@@ -514,5 +512,6 @@ private static final String[] STATES = {
         }
         return false;
     }
+
 
 }
