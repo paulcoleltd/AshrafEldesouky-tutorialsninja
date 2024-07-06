@@ -18,7 +18,7 @@
             </class>
         </classes>
     </test>
-    <test name="Test Case 1: Check Registeration">
+    <test name="Test Case 2: Check Registeration">
 
         <classes>
             <class name="TestCases.TC02_Registeration">
