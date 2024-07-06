@@ -18,7 +18,11 @@
             </class>
         </classes>
     </test>
+<<<<<<< HEAD
     <test name="Test Case 2: Check Registeration Edge">
+=======
+    <test name="Test Case 2: Check Registeration">
+>>>>>>> d1211c353ed6828fe52b354d200c8d7bbd5be847
 
         <classes>
             <class name="TestCases.TC02_Registeration">
